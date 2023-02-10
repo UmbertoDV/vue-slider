@@ -1,0 +1,90 @@
+/* .dbg {
+	border: 3px dashed red;
+} */
+
+img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.my-carousel-container {
+	height: 100vh;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.my-carousel {
+	width: 80%;
+	margin: 0 auto;
+
+	position: relative;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.my-carousel-main {
+	height: 80vh;
+	width: 60vw;
+	margin-bottom: 15px;
+}
+
+.slide {
+	position: relative;
+}
+
+.slide-text {
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	color: white;
+	background-color: rgba(0, 0, 0, .8);
+	padding: 15px;
+}
+
+.my-carousel-main .slide {
+	display: none;
+	height: 100%;
+}
+
+.my-carousel-main .slide.active {
+	display: block;
+	border: 1px solid black;
+}
+
+.my-carousel-thumbs {
+	flex-direction: column;
+	flex-wrap: nowrap;
+	height: 100%;
+}
+
+.thumb {
+	width: 20vw;
+	height: 16vh;
+	cursor: pointer;
+	border-top: 1px solid black;
+	border-right: 1px solid black;
+}
+
+.thumb:last-child {
+	border-bottom: 1px solid black;
+}
+
+.controls {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+
+	color: white;
+	font-size: 50px;
+}
+
+.controls span {
+	border: 10px solid white;
+	cursor: pointer;
+}
